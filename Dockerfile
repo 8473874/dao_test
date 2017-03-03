@@ -7,7 +7,7 @@ RUN npm install pm2 -g
 ADD . /var/daotest
 WORKDIR /var/daotest/app
 
-RUN npm install
+RUN npm install --production
 
 ENV PORT 10000
 
